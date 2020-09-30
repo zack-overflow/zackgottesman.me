@@ -1,137 +1,50 @@
-<!-- Inspired by Abbie Bradley's minimalist resume -->
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
-<head>
-	<title>Zack Gottesman</title>
-	<link rel="stylesheet" type="text/css" href="styles.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body>
+	<head>
+		<title>Zack G.</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
 
-	<div class="container">
-		<div class="intro">
-			<h1 class="first-name"><strong>Zack</strong></h1>
-			<h1 class="last-name">Gottesman</h1>
-			<span class="job-title">Engineer and Data Scientist</span>
-			<span class="email">zackgottesman@gmail.com</span>
+		<!-- Wrapper -->
+			<div id="wrapper">
 
-			<h2 class="lead">Junior at Dartmouth College studying Computer Science, Quantitative Social Science, and History</h2>
-		</div>
-	</div>
+				<!-- Main -->
+					<section id="main">
+						<header>
+							<span class="avatar"><img src="images/zg.jpg" alt="" /></span>
+							<h1>Zack Gottesman</h1>
+							<p>Software Engineer and Junior at Dartmouth College</p>
+						</header>
+						<footer>
+							<ul class="icons">
+								<li id="linkedin"><a href="https://www.linkedin.com/in/zackgottesman/" class="icon brands fa-linkedin">LinkedIn</a></li>
+								<li id="github"><a href="" class="icon brands fa-github">Github</a></li>
+								<li id="resume"><a href="./content/GottesmanResume.pdf" class="fa-file" target="_blank">Resume</a></li>
+							</ul>
+						</footer>
 
-<!-- Skills and intrest section -->
-	<div class="container">
+						<ul class="actions special">
+							<li><a href="../home" class="button">Enter</a></li>
+						</ul>
+					</section>
 
-		<div class="sections">
-			<h2 class="section-title">Data Science and Programming Experience</h2>
+				<!-- Footer -->
+					<footer id="footer">
+					</footer>
 
-			<div class="list-card">
-				<div>
-					<h3 id="likewise-header">Likewise</h3>
-					<span>Data science and machine learning internship</span>
-				</div>
 			</div>
 
-			<div class="list-card">
-				<div>
-					<h3 id="football-header">Dartmouth Football</h3>
-					<span>Analyzed kickoff data, leading directly to rule change proposal in Ivy League</span>
-				</div>
-			</div>
+		<!-- Scripts -->
+			<script>
+				if ('addEventListener' in window) {
+					window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-preload\b/, ''); });
+					document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+				}
+			</script>
 
-			<div class="list-card">
-				<div>
-					<h3 id="greentrace-header">GreenTrace</h3>
-					<span>Contact tracing app for Dartmouth College</span>
-				</div>
-			</div>
-		</div>
-
-		<div class="sections">
-				<h2 class="section-title">Other Experience</h2>
-
-				<div class="list-card">
-					<div>
-						<h3 id="research-header">Health Economics Research</h3>
-						<span>Co-authored paper analyzing health awareness campaigns for academic publication</span>
-					</div>
-				</div>
-
-		</div>
-	</div>
-
-
-	<!-- Achievements -->
-
-	<div class="container cards">
-
-		<div class="card">
-			<div class="skill-level">
-				<span>+</span>
-				<h2>10</h2>
-			</div>
-
-			<div class="skill-meta">
-				<h3>Projects</h3>
-				<span></span>
-			</div>
-		</div>
-
-
-		<div class="card">
-			<div class="skill-level">
-				<h2>3.94</h2>
-			</div>
-
-			<div class="skill-meta">
-				<h3>GPA</h3>
-				<span>Rufus Choate Scholar (top 5% of class)</span>
-			</div>
-		</div>
-
-	</div>
-
-	<!-- Timeeline -->
-
-	<div class="container">
-		<ol class="timeline">
-		  <li id="likewise-timeline">
-
-		    <p class="line">Engineering Experience</p>
-		    <span class="point"></span>
-		    <p class="description">
-		      Intern at Likewise
-		    </p>
-		    <span class="date">Summer 2019</span>
-		  </li>
-
-		  <li>
-		    <span class="point"></span>
-		    <p class="description">
-		      Intern with Dartmouth Football
-		    </p>
-		    <span class="date">Winter 2020 - Present</span>
-		  </li>
-
-		  		  <li>
-		    <p class="line">Education</p>
-		    <span class="point"></span>
-		    <p class="description">
-		      Mercer Island High School
-		    </p>
-		    <span class="date">2014 - 2018</span>
-		  </li>
-
-		  		  <li>
-		    <span class="point"></span>
-		    <p class="description">
-		      Dartmouth College
-		    </p>
-		    <span class="date">2018 - 2022</span>
-		  </li>
-		</ol>
-
-	</div>
-
-</body>
+	</body>
 </html>
