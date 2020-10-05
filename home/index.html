@@ -7,19 +7,82 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
-	<!-- Modal -->
-	<div class="modal">
+
+	<!-- Football Modal -->
+	<div id="football-modal" class="modal">
 		<div class="modal-content">
-			<span class="close-btn">&times;</span>
+			<span id="football-close-btn" class="close-btn">&times;</span>
+			<div class="modalheader">
+				<h2>Dartmouth Football</h2>
+			</div>
+			<img src="images/dartfootballlogowhite.png" align="left"/>
+			<p>
+				Since last year, I have served as the sole data scientist for the Ivy League-champion <a href="https://dartmouthsports.com/sports/football" target="_blank">Dartmouth Football</a> team. Dartmouth Football is pioneering <a href="https://www.nytimes.com/2018/10/26/sports/ivy-league-football-dartmouth.html" target="_blank">cutting edge techniques</a> to help improve safety in football. I helped head coach Buddy Teevens investigate safety during highly dangerous kickoff plays, providing the analysis that backed a proposed rule change to kickoffs in the Ivy League.
+			</p>
+			<br/>
+			<p>
+				Traditionally, kickoffs are known as high-risk plays due to the dangerous collisions that occur when players run full-speed down the field. Recently, the Ivy League implemented a rule that allows the team receiving a kickoff to elect a “fair catch” that allows them to the ball at the 25-yard line. Many teams still choose to return, however, leading to injuries. My analysis showed that, returns actually produce lower rates of success than fair catches, suggesting that a viable strategy would be for teams to intend to fair catch before the kickoff even occurs. Dartmouth employed a very similar strategy last season, electing to return only three kickoffs over the course of the season. Yet, players were still injured from blocking on the fair catch plays although the plays were essentially meaningless. Therefore, backed by my analysis, Coach Teevens proposed that a new rule allow teams to announce an intention to fair catch before the kickoff even occurs and simply take possession at the 25-yard line, preventing injuries and achieving the same result.
+			</p>
+		</div>
+	</div>
+
+	<!-- Likewise Modal -->
+	<div id="lw-modal" class="modal">
+		<div class="modal-content">
+			<span id="lw-close-btn" class="close-btn">&times;</span>
 			<div class="modalheader">
 				<h2>Likewise Inc.</h2>
 			</div>
 			<img src="images/lwlogo.png" align="left"/>
-			<p>The summer after my freshman year at Dartmouth, I had the pleasure of joining the team at</p>
-			<a href="https://likewise.com" target="_blank">Likewise</a>
-			<p>as a software engineer intern focusing on machine learning. Likewise is an early-stage recommendation startup, funded by Bill Gates, that provides personalized recommendations for users. Think Yelp combined with Instagram or Facebook. During my internship, I put various machine learning algorithms into production and gained invaluable experience deploying and documenting ML models. First, I combined k-prototypes clustering and classification to create predictive recommender system and improve recommendations for new users. I identified a few distinct groups within the user base that helped the leadership team think about how to approach marketing and customer acquistion. Then, I built an end-to-end classification system to predict retention based on limited features. I presented this to members of the product and engineering teams to suggest how we might improve the onboarding process to help retain more users and reduce churn.</p>
+			<p>The summer after my freshman year at Dartmouth, I had the pleasure of joining the team at <a href="https://likewise.com" target="_blank">Likewise</a> as a software engineer intern focusing on machine learning. Likewise is an early-stage recommendation startup, funded by Bill Gates, that provides personalized recommendations for users. Think Yelp combined with Instagram or Facebook. During my internship, I put various machine learning algorithms into production and gained invaluable experience deploying and documenting ML models. First, I combined k-prototypes clustering and classification to create predictive recommender system and improve recommendations for new users. I identified a few distinct groups within the user base that helped the leadership team think about how to approach marketing and customer acquistion. Then, I built an end-to-end classification system to predict retention based on limited features. I presented this to members of the product and engineering teams to suggest how we might improve the onboarding process to help retain more users and reduce churn.</p>
 		</div>
 	</div>
+
+	<!-- CoRisk Modal -->
+	<div id="cr-modal" class="modal">
+		<div class="modal-content">
+			<span id="cr-close-btn" class="close-btn">&times;</span>
+			<div class="modalheader">
+				<h2>CoRisk</h2>
+			</div>
+			<img src="images/corisk.png" align="left"/>
+			<p>
+				As a final project for Dartmouth CS52: Full-Stack Web Development in the spring of 2020, I founded <a href="https://github.com/dartmouth-cs52-20S/project-greentraceGreenTrace" target="_blank">GreenTrace</a>, an application to help Dartmouth students return safely to campus despite the ongoing COVID-19 pandemic. After adding a few brilliant teammates, we engineered a mobile application in React Native that featured contact tracing (alerting users at the end of the day if they had come in contact with a COVID-positive person during the day), pertinent contact information of campus health services, and an anonymized heat map of cases so students knew which areas to avoid. The full list of features can be found on the <a href="https://github.com/dartmouth-cs52-20S/project-greentrace#feature-overview" target="_blank">Github</a>. Apart from my role as the founder/inventor of GreenTrace, I also worked on backend development for the app, setting up anonymous accounts and authentication using a randomized two-word token for each user and writing the contact-tracing algorithm. Working on the project helped me become more familiar with NodeJS and NoSQL databases (we used MongoDB).
+			</p>
+			<br/>
+			<p>
+				The project was a success, and after the spring term came to a close, Dartmouth approached our team about continuing to develop GreenTrace for use on campus. We partnered with Dartmouth's <a href="http://dali.dartmouth.edu/" target="_blank">DALI Lab</a> to transform the project into CoRisk, an application that provides information for Dartmouth students to help limit the risk of contracting COVID-19 for themselves and others. CoRisk is currently in development, with an anticipated release this winter.
+			</p>
+		</div>
+	</div>
+
+	<!-- Econ Research Modal -->
+	<div id="econ-modal" class="modal">
+		<div class="modal-content">
+			<span id="econ-close-btn" class="close-btn">&times;</span>
+			<div class="modalheader">
+				<h2>Likewise Inc.</h2>
+			</div>
+			<img src="images/seattleusimple.png" align="left"/>
+			<p>
+				For the past three years, I have been working on academic economics research alongside health economics professor Erin Vernon of Seattle University. As my grandmother
+				<a href="https://likewise.com" target="_blank">Likewise</a>
+			</p>
+		</div>
+	</div>
+
+	<!-- HFA Modal -->
+	<div id="hfa-modal" class="modal">
+		<div class="modal-content">
+			<span id="hfa-close-btn" class="close-btn">&times;</span>
+			<div class="modalheader">
+				<h2>Likewise Inc.</h2>
+			</div>
+			<img src="images/lwlogo.png" align="left"/>
+			<p>The summer after my freshman year at Dartmouth, I had the pleasure of joining the team at <a href="https://likewise.com" target="_blank">Likewise</a> as a software engineer intern focusing on machine learning. Likewise is an early-stage recommendation startup, funded by Bill Gates, that provides personalized recommendations for users. Think Yelp combined with Instagram or Facebook. During my internship, I put various machine learning algorithms into production and gained invaluable experience deploying and documenting ML models. First, I combined k-prototypes clustering and classification to create predictive recommender system and improve recommendations for new users. I identified a few distinct groups within the user base that helped the leadership team think about how to approach marketing and customer acquistion. Then, I built an end-to-end classification system to predict retention based on limited features. I presented this to members of the product and engineering teams to suggest how we might improve the onboarding process to help retain more users and reduce churn.</p>
+		</div>
+	</div>
+
 	<body class="is-preload">
 		<!-- Wrapper -->
 			<div id="wrapper">
@@ -28,7 +91,7 @@
 						<div class="inner">
 
 							<!-- Nav -->
-								<nav>
+								<nav id="menu2">
 									<ul>
 										<li><a href="#menu">Menu</a></li>
 									</ul>
@@ -52,20 +115,34 @@
 				<!-- Main -->
 					<div id="main">
 						<div class="inner">
+							<main class="wrapper">
+							<h1 style="margin-bottom: 0">
+								<span class="welcome">
+									<span id="welcome">Welcome!</span>
+								</span>
+							</h1>
+							<h1>
+								<span class="first">
+									<span>I’m</span> <span>Zack,</span> <span>a</span> <span>junior</span> <span></span> <span>at</span> <span class="dartmouth-header-text">Dartmouth</span> <span class="dartmouth-header-text">College</span>
+								</span>
+
+								<span class="second">
+									<span>in</span> <span>Hanover,</span> <span>NH</span> <span></span><span>and</span> <span>an</span> <span>aspiring</span> <span>software</span> <span>engineer.</span>
+								</span>
+							</h1>
+						</main>
 							<header>
-								<h1>Welcome!<br />
-								I'm Zack, a Junior at Dartmouth College in Hanover, NH and an aspiring software engineer</a>.</h1>
-								<h2 id="about">About Me</h2>
-								<p>I am a persistent problem solver and insatiably curious.</p>
+								<h2 id="about" style="margin-bottom: 3vh;">About Me</h2>
+								<p>I am a persistent problem solver and insatiably curious. <strong>Click on the cards below to learn more about me.</strong></p>
 							</header>
 
-							<h2 id="experience">Engineering and Data Science Experience</h2>
+							<h2 id="experience" style="margin-bottom: 2vh">Engineering and Data Science Experience</h2>
 							<section class="tiles">
 								<article class="dartmouth">
 									<span class="image">
 										<img src="images/dartfootball.jpg" alt="" />
 									</span>
-									<a>
+									<a  id="football-modal-trigger">
 										<h2>Dartmouth Football</h2>
 										<div class="content">
 											<p>Serve as sole data scientist for Dartmouth's football team</p>
@@ -76,10 +153,10 @@
 									<span class="image">
 										<img src="images/likewise.jpg" alt="" />
 									</span>
-									<a id="likewisemodal">
+									<a id="lw-modal-trigger">
 										<h2>Likewise</h2>
 										<div class="content">
-											<p>Worked as software engineer and machine learning specialist at early-stage recommendations startup</p>
+											<p>Worked as engineer and ML specialist at early-stage recommendations startup</p>
 										</div>
 									</a>
 								</article>
@@ -87,22 +164,22 @@
 									<span class="image">
 										<img src="images/corisk.png" alt="" />
 									</span>
-									<a>
+									<a id="cr-modal-trigger">
 										<h2>CoRisk</h2>
 										<div class="content">
-											<p>Founded of contact-tracing app and COVID-19 safety in use on Dartmouth campus</p>
+											<p>Founded contact-tracing app and COVID-19 safety in use on Dartmouth campus</p>
 										</div>
 									</a>
 								</article>
 							</section>
 							<br/>
-							<h2>Other Experience</h2>
+							<h2  style="margin-bottom: 2vh">Other Experience</h2>
 								<section class="tiles">
 									<article class="research">
 										<span class="image">
 											<img src="images/seattleu.jpg" alt="" />
 										</span>
-										<a>
+										<a id="econ-modal-trigger">
 											<h2>Economics Research</h2>
 											<div class="content">
 												<p>Co-authoring paper evaluating health awareness campaigns for academic publication</p>
@@ -113,7 +190,7 @@
 										<span class="image">
 											<img src="images/hfa.png" alt="" />
 										</span>
-										<a>
+										<a id="hfa-modal-trigger">
 											<h2>Hillary for America</h2>
 											<div class="content">
 												<p>Interned for Pacific Northwest Finance Director of Hillary for America campaign</p>
@@ -134,7 +211,7 @@
 								</section>
 
 							<br/>
-							<h2 id="education">Education</h2>
+							<h2 id="education" style="margin-top: 2vh; margin-bottom: 4vh">Education</h2>
 								<section class="tileslong">
 									<article class="dartmouth">
 										<span class="image">
@@ -161,7 +238,7 @@
 								</section>
 
 								<br/>
-								<h2 id="skills">Skills</h2>
+								<h2 id="skills" style="margin-top: 2vh; margin-bottom: 3vh">Skills</h2>
 								<div class="skillcontainer">
 									<div class="skill-box">
 										<h3>Languages</h3>
@@ -175,7 +252,7 @@
 										</ul>
 									</div>
 									<div class="skill-box">
-										<h3>Technologies/Frameworks</h3>
+										<h3>Technologies</h3>
 										<ul class="alt">
 											<li>React</li>
 											<li>Redux</li>
@@ -198,39 +275,17 @@
 										</ul>
 									</div>
 								</div>
-
 						</div>
 					</div>
 
-				<!-- Footer -->
+				<!-- Footer/Links -->
 					<footer id="footer">
 						<div class="inner">
-							<!--
-							<section>
-								<h2>Please contact me!</h2>
-								<form method="post" action="#">
-									<div class="fields">
-										<div class="field half">
-											<input type="text" name="name" id="name" placeholder="Name" />
-										</div>
-										<div class="field half">
-											<input type="email" name="email" id="email" placeholder="Email" />
-										</div>
-										<div class="field">
-											<textarea name="message" id="message" placeholder="Message"></textarea>
-										</div>
-									</div>
-									<ul class="actions">
-										<li><input type="submit" value="Send" class="primary" /></li>
-									</ul>
-								</form>
-							</section>
-						-->
 							<section>
 								<h2>Check out my stuff!</h2>
 								<ul class="icons">
-									<li><a href="https://github.com/zackg22" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
-									<li><a href="https://linkedin.com/in/zackgottesman" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+									<li><a href="https://github.com/zackg22" class="icon brands style2 fa-github" target="_blank"><span class="label">GitHub</span></a></li>
+									<li><a href="https://linkedin.com/in/zackgottesman" class="icon brands fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
 									<li><a href="../../content/GottesmanResume.pdf" class="icon solid style2 fa-file"><span class="label">Resume</span></a></li>
 									<li><a href="mailto:zackgottesman@gmail.com" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
 								</ul>
@@ -241,6 +296,7 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/custom.min.js"></script>
 
 	</body>
 </html>

@@ -178,19 +178,173 @@
 
 })(jQuery);
 
-let modalBtn = document.getElementById("likewisemodal")
-let modal = document.querySelector(".modal")
-let closeBtn = document.querySelector(".close-btn")
-let body = document.getElementById("wrapper")
-modalBtn.onclick = function(){
-  modal.style.display = "block"
-	body.stye.display = "fixed"
+
+// Update variable as user scrolls page
+window.addEventListener('scroll', () => {
+  document.documentElement.style.setProperty('--scroll-y', `${window.scrollY}px`);
+});
+
+// Football Modal
+let footballModalBtn = document.getElementById("football-modal-trigger")
+let footballModal = document.getElementById("football-modal")
+let footballCloseBtn = document.getElementById("football-close-btn")
+
+footballModalBtn.onclick = function(){
+  footballModal.style.display = "block"
+	const scrollY = document.documentElement.style.getPropertyValue('--scroll-y');
+  const body = document.body;
+  body.style.position = 'fixed';
+  body.style.top = `-${scrollY}`;
 }
-closeBtn.onclick = function(){
-  modal.style.display = "none"
+
+footballCloseBtn.onclick = function(){
+  footballModal.style.display = "none"
+	const body = document.body;
+  const scrollY = body.style.top;
+  body.style.position = '';
+  body.style.top = '';
+  window.scrollTo(0, parseInt(scrollY || '0') * -1);
 }
+
 window.onclick = function(e){
-  if(e.target == modal){
-    modal.style.display = "none"
+  if(e.target == footballModal){
+    footballModal.style.display = "none"
+		const body = document.body;
+	  const scrollY = body.style.top;
+	  body.style.position = '';
+	  body.style.top = '';
+	  window.scrollTo(0, parseInt(scrollY || '0') * -1);
+  }
+}
+
+// Likewise Modal
+let lwModalBtn = document.getElementById("lw-modal-trigger")
+let lwModal = document.getElementById("lw-modal")
+let lwCloseBtn = document.getElementById("lw-close-btn")
+
+lwModalBtn.onclick = function(){
+  lwModal.style.display = "block"
+	const scrollY = document.documentElement.style.getPropertyValue('--scroll-y');
+  const body = document.body;
+  body.style.position = 'fixed';
+  body.style.top = `-${scrollY}`;
+}
+
+lwCloseBtn.onclick = function(){
+  lwModal.style.display = "none"
+	const body = document.body;
+  const scrollY = body.style.top;
+  body.style.position = '';
+  body.style.top = '';
+  window.scrollTo(0, parseInt(scrollY || '0') * -1);
+}
+
+window.onclick = function(e){
+  if(e.target == lwModal){
+    lwModal.style.display = "none"
+		const body = document.body;
+	  const scrollY = body.style.top;
+	  body.style.position = '';
+	  body.style.top = '';
+	  window.scrollTo(0, parseInt(scrollY || '0') * -1);
+  }
+}
+
+// CoRisk Modal
+let crModalBtn = document.getElementById("cr-modal-trigger")
+let crModal = document.getElementById("cr-modal")
+let crCloseBtn = document.getElementById("cr-close-btn")
+
+crModalBtn.onclick = function(){
+  crModal.style.display = "block"
+	const scrollY = document.documentElement.style.getPropertyValue('--scroll-y');
+  const body = document.body;
+  body.style.position = 'fixed';
+  body.style.top = `-${scrollY}`;
+}
+
+crCloseBtn.onclick = function(){
+  crModal.style.display = "none"
+	const body = document.body;
+  const scrollY = body.style.top;
+  body.style.position = '';
+  body.style.top = '';
+  window.scrollTo(0, parseInt(scrollY || '0') * -1);
+}
+
+window.onclick = function(e){
+  if(e.target == crModal){
+    crModal.style.display = "none"
+		const body = document.body;
+	  const scrollY = body.style.top;
+	  body.style.position = '';
+	  body.style.top = '';
+	  window.scrollTo(0, parseInt(scrollY || '0') * -1);
+  }
+}
+
+// Econ Research Modal
+let econModalBtn = document.getElementById("econ-modal-trigger")
+let econModal = document.getElementById("econ-modal")
+let econCloseBtn = document.getElementById("econ-close-btn")
+
+econModalBtn.onclick = function(){
+  econModal.style.display = "block"
+	const scrollY = document.documentElement.style.getPropertyValue('--scroll-y');
+  const body = document.body;
+  body.style.position = 'fixed';
+  body.style.top = `-${scrollY}`;
+}
+
+econCloseBtn.onclick = function(){
+  econModal.style.display = "none"
+	const body = document.body;
+  const scrollY = body.style.top;
+  body.style.position = '';
+  body.style.top = '';
+  window.scrollTo(0, parseInt(scrollY || '0') * -1);
+}
+
+window.onclick = function(e){
+  if(e.target == econModal){
+    econModal.style.display = "none"
+		const body = document.body;
+	  const scrollY = body.style.top;
+	  body.style.position = '';
+	  body.style.top = '';
+	  window.scrollTo(0, parseInt(scrollY || '0') * -1);
+  }
+}
+
+// HFA Modal
+let hfaModalBtn = document.getElementById("hfa-modal-trigger")
+let hfaModal = document.getElementById("hfa-modal")
+let hfaCloseBtn = document.getElementById("hfa-close-btn")
+
+hfaModalBtn.onclick = function(){
+  hfaModal.style.display = "block"
+	const scrollY = document.documentElement.style.getPropertyValue('--scroll-y');
+  const body = document.body;
+  body.style.position = 'fixed';
+  body.style.top = `-${scrollY}`;
+}
+
+hfaCloseBtn.onclick = function(){
+  hfaModal.style.display = "none"
+	const body = document.body;
+  const scrollY = body.style.top;
+  body.style.position = '';
+  body.style.top = '';
+  window.scrollTo(0, parseInt(scrollY || '0') * -1);
+}
+
+window.onclick = function(e){
+  if(e.target == hfaModal){
+    hfaModal.style.display = "none"
+		const body = document.body;
+	  const scrollY = body.style.top;
+	  body.style.position = '';
+	  body.style.top = '';
+	  window.scrollTo(0, parseInt(scrollY || '0') * -1);
   }
 }
