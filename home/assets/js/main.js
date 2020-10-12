@@ -348,3 +348,36 @@ window.onclick = function(e){
 	  window.scrollTo(0, parseInt(scrollY || '0') * -1);
   }
 }
+
+// Caddy Modal
+let caddyModalBtn = document.getElementById("caddy-modal-trigger")
+let caddyModal = document.getElementById("caddy-modal")
+let caddyCloseBtn = document.getElementById("caddy-close-btn")
+
+caddyModalBtn.onclick = function(){
+  caddyModal.style.display = "block"
+	const scrollY = document.documentElement.style.getPropertyValue('--scroll-y');
+  const body = document.body;
+  body.style.position = 'fixed';
+  body.style.top = `-${scrollY}`;
+}
+
+caddyCloseBtn.onclick = function(){
+  caddyModal.style.display = "none"
+	const body = document.body;
+	const scrollY = body.style.top;
+  body.style.position = '';
+  body.style.top = '';
+  window.scrollTo(0, parseInt(scrollY || '0') * -1);
+}
+
+window.onclick = function(e){
+  if(e.target == caddyModal){
+    caddyModal.style.display = "none"
+		const body = document.body;
+	  const scrollY = body.style.top;
+	  body.style.position = '';
+	  body.style.top = '';
+	  window.scrollTo(0, parseInt(scrollY || '0') * -1);
+  }
+}
