@@ -3283,8 +3283,9 @@ input, select, textarea {
 
 @media screen and (max-width: 480px) {
 	.modal-content {
-		width: 80%;
+		margin-bottom: 50px;
 	}
+
 	.modal-content img {
 		padding-left: 25%;
 		width: 75%;
@@ -3295,6 +3296,7 @@ input, select, textarea {
 		font-size: 13pt;
 		line-height: 14pt;
 	}
+
 	.modal-content a {
 		font-size: 13pt;
 	}
