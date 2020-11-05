@@ -2587,7 +2587,7 @@ input, select, textarea {
 		-webkit-flex-wrap: wrap;
 		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
-		postiion: relative;
+		position: relative;
 		margin: -2.5em 0 0 -2.5em;
 	}
 
@@ -2600,6 +2600,7 @@ input, select, textarea {
 			width: calc(33.333333% - 2.5em);
 			height: 100%;
 			margin: 2.5em 0 0 2.5em;
+			cursor: pointer;
 		}
 
 			.tiles article > .image {
@@ -3167,6 +3168,9 @@ input, select, textarea {
   animation-name: animatetop;
   animation-duration: 0.4s
 }
+.modal-content p{
+	font-size: 14pt;
+  }
 .close-btn {
   float: right;
   color: lightgray;
@@ -3209,10 +3213,6 @@ input, select, textarea {
 	width: 15em;
 }
 
-#lw-modal img {
-	margin-bottom: 2vh
-}
-
 #econ-modal img {
 	justify-content: center;
 	display: flex;
@@ -3228,6 +3228,7 @@ input, select, textarea {
 	padding-top: 0.3rem;
 	width: 10em;
 }
+
 
 .modal-content p {
 	margin: 0px;
@@ -3250,6 +3251,7 @@ input, select, textarea {
 #econ-modal a:hover {
 	color: #aa0000;
 }
+
 
 @media screen and (max-width: 736px) {
 	.modal-content {
@@ -3283,7 +3285,7 @@ input, select, textarea {
 
 @media screen and (max-width: 480px) {
 	.modal-content {
-		margin-bottom: 50px;
+		margin-bottom: 160px;
 	}
 
 	.modal-content img {
@@ -3294,7 +3296,7 @@ input, select, textarea {
 
 	.modal-content p {
 		font-size: 13pt;
-		line-height: 14pt;
+		line-height: 18pt;
 	}
 
 	.modal-content a {
@@ -3384,13 +3386,16 @@ input, select, textarea {
 	color: #800000;
 }
 .mihs-education .crest img {
-	height: 80%;
+	height: 100%;
+}
+.dart-education .crest img {
+	height: 100%;
 }
 
 .crest {
 	display: flex;
 	justify-content: center;
-	margin: 0px;
+	margin: 1px;
 }
 
 .dart-education li{
@@ -3441,4 +3446,9 @@ input, select, textarea {
 	.mihs-education h3 {
 		font-size: 4vw;
 	}
+}
+
+.about {
+	font-size: 20pt;
+	font-weight: normal;
 }
